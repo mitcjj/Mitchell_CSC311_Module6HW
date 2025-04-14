@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mitchell_csc311_module6hw.FormDisplayController">
+   <children>
+      <Label fx:id="firstName" alignment="CENTER" prefHeight="140.0" prefWidth="600.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastName" alignment="CENTER" prefHeight="140.0" prefWidth="600.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" alignment="CENTER" prefHeight="140.0" prefWidth="600.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="dob" alignment="CENTER" prefHeight="140.0" prefWidth="600.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="zipCode" alignment="CENTER" prefHeight="140.0" prefWidth="600.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region prefHeight="100.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#newForm" prefHeight="60.0" prefWidth="200.0" text="Fill out a new form">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

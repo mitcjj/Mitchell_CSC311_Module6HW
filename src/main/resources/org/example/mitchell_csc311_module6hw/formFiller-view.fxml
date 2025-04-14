@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" alignment="CENTER" onMouseMoved="#enableAddButton" prefHeight="800.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mitchell_csc311_module6hw.FormFillerController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" alignment="TOP_LEFT" prefHeight="150.0" prefWidth="500.0" text="Please fill out the form below.  Please follow the guidelines.            * Names should be at least 2 characters long, but no more than 25 characters long.                                                                                            * Date of Birth must follow the MM/DD/YYYY format.                        * Only Farmingdale emails will be accepted.                                         * Zip Code should be a 5 digit number." wrapText="true">
+      <font>
+         <Font size="16.0" />
+      </font></Label>
+    <Label fx:id="firstNameLabel" text="" textFill="RED">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="firstNameField" onKeyTyped="#firstNameIsCorrect" promptText="First Name">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <Label fx:id="lastNameLabel" text="" textFill="RED">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="lastNameField" onKeyTyped="#lastNameIsCorrect" promptText="Last Name">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <Label fx:id="emailLabel" text="" textFill="RED">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="emailField" onKeyTyped="#emailIsCorrect" promptText="Email">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <Label fx:id="dobLabel" text="" textFill="RED">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="dobField" onKeyTyped="#dobIsCorrect" promptText="Date of Birth">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <Label fx:id="zipLabel" text="" textFill="RED">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="zipField" onKeyTyped="#zipIsCorrect" promptText="Zip Code">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+    <Button fx:id="addButton" disable="true" onAction="#onAddButtonClick" onMouseEntered="#enableAddButton" prefHeight="40.0" prefWidth="120.0" text="Add">
+      <font>
+         <Font size="16.0" />
+      </font></Button>
+</VBox>
